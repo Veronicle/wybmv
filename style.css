@@ -1,0 +1,130 @@
+        
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+    body {
+        background-color: #131316;
+        color: #FAF9F6;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 75px;
+        margin-bottom: 0px;
+    }
+
+    p {
+        margin-top: 10px;
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    a {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 40px;
+        color: white;
+        text-decoration: none;
+
+
+    }
+
+    a:hover {
+        color: rgb(255, 0, 140);
+    }
+
+    section {
+        display: grid;
+        place-items: center;
+        align-content: center;
+        min-height: 100vh;
+    }
+
+    .hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 1.75s;
+        margin: 5px;
+    }
+
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+
+    .logos {
+        display: flex;
+    }
+
+    .logo:nth-child(2) {
+        transition-delay: 150ms;
+    }
+
+    .logo:nth-child(3) {
+        transition-delay: 300ms;
+    }
+
+    .logo:nth-child(4) {
+        transition-delay: 450ms;
+    }
+
+    .logo:nth-child(5) {
+        transition-delay: 600ms;
+    }
+
+    .logo:nth-child(6) {
+        transition-delay: 750ms;
+    }
+
+    .logo:nth-child(7) {
+        transition-delay: 900ms; 
+    }
+
+    .logo:nth-child(8) {
+        transition-delay: 1050ms;
+    }
+
+    .visit {
+        display: flex;
+        justify-content: center;
+        align-items: center;            
+        height: 200px;
+        width: 200px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+
+    .icon {
+        width: 64px;
+        height: 64px;
+    }
+
+    .icon:hover {
+        transform: scale(1.1);
+    }
+
+
+    button {
+        background-color: yellow;
+        font-family: 'Roboto Condensed', sans-serif;
+        height: 45px;
+        width: 120px;
+        font-size: 15px;
+        font-weight: 700;
+        border-radius: 10px;
+        margin: 0px;
+    }
+
+
+    .trail { /* className for the trail elements */
+        position: absolute;
+        height: 6px; width: 6px;
+        border-radius: 4px;
+        background: rgb(255, 0, 140);
+      }
